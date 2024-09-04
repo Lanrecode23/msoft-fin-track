@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/hero.css'
+import { Link} from 'react-router-dom';
 function Hero() {
     return (
         <div className="container-fluid d-flex justify-content-evenly align-items-center p-5 bg-body-tertiary">
@@ -14,7 +15,7 @@ function Hero() {
                             achieve your financial goals effortlessly. <br />
                             Start managing your money smarter today.
                         </p>
-                        <a style={{"--clr": "#7808d0"}} className="button mb-4" href="#">
+                        <Link to ='/register' style={{"--clr": "#7808d0"}} className="button mb-4">
                             <span className="button__icon-wrapper">
                                 <svg width="10" className="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
                                     <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
@@ -25,7 +26,7 @@ function Hero() {
                                 </svg>
                             </span>
                             Get Started
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-md-6">

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Auth } from '../config/firebase';
 import Swal from 'sweetalert2'
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
 
@@ -58,7 +58,7 @@ function Login() {
 
   return (
     <>
-      <div className="logo"><img src="/img/logo.png" alt="" /></div>
+      <Link to= '/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link>
       <form className="form" onSubmit={handleSubmit}>
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <p className="title">Login </p>

@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary stick-top">
                 <Container>
-                    <Navbar.Brand href="#home"><img src="/img/logo.png" alt="" /></Navbar.Brand>
+                    <Navbar.Brand as={Link} to = '/'><img src="/img/logo.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
@@ -20,7 +20,7 @@ function Header() {
                             <Nav.Link href="#pr">Section</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Login</Nav.Link>
+                            <Nav.Link as={Link} to = '/login'>Login</Nav.Link>
                             <Nav.Link as={Link} to ='/register'>
                                 Register
                             </Nav.Link>

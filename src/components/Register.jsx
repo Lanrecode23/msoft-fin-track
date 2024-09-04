@@ -3,7 +3,7 @@ import '../css/register.css'
 import Swal from 'sweetalert2'
 import { Auth, googleProvider } from '../config/firebase';
 import { createUserWithEmailAndPassword, updateProfile, signInWithPopup, sendEmailVerification } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Register() {
 
@@ -69,7 +69,7 @@ function Register() {
 
     return (
         <div>
-            <div className="logo"><img src="/img/logo.png" alt="" /></div>
+           <Link to= '/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link> 
             <form className="form" onSubmit={handleSubmit}>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 <p className="title">Register </p>
