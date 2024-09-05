@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary stick-top">
+            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary sticky-top">
                 <Container>
                     <Navbar.Brand as={Link} to = '/'><img src="/img/logo.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

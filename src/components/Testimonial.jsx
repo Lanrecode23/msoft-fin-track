@@ -28,10 +28,9 @@ function Testimonial() {
                         <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in-up">
                             <img src="https://media.istockphoto.com/id/1540766473/photo/young-adult-male-design-professional-smiles-for-camera.webp?a=1&b=1&s=612x612&w=0&k=20&c=b5jQWlwUzmp-MBDwPg02HSKsqZy0Ymd6o2NTeXlB5Zo=" className="card-img-top" alt="..." />
                             <div className="card-body p-4">
-                                <p className="card-text">"Remote work has brought our team closer together.<br /> With well-defined
-                                    processes and regular team rituals, we’re more in sync than ever, and our productivity has
-                                    skyrocketed."</p>
-                                <h5 className="pt-3">🦠Dangadi Enty.</h5>
+                                <p className="card-text">"This app has transformed the way I manage my money! I can track every expense and see where my money is going with just a few clicks."
+                               </p>
+                                <h5 className="pt-3" > — James O., Entrepreneur & Activist</h5>
                             </div>
                         </div>
                     </div>
@@ -39,11 +38,9 @@ function Testimonial() {
                         <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in-up">
                             <img src="https://media.istockphoto.com/id/1626847852/photo/a-happy-beautiful-blonde-businesswoman-working-on-her-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=s5Hpq6hd45U8hrodknk8nf8z2mfMUJoL5vG3tdWwZIQ=" className="card-img-top" alt="..." />
                             <div className="card-body p-4">
-                                <p className="card-text">"Since adopting remote work practices, our team has never been more
-                                    efficient.
-                                    We’ve streamlined our processes, developed meaningful team rituals, and seen a noticeable
-                                    boost in productivity. Distance is no longer a barrier!".</p>
-                                <h5 className="pt-3">🕸️Sangaha Ltd.</h5>
+                                <p className="card-text">I feel more in control of my finances than ever before. The budgeting tools and spending insights have helped me save more each month. "
+                                </p>
+                                <h5 className="pt-3">— Sarah L., Freelance Designer</h5>
                             </div>
                         </div>
                     </div>
@@ -51,11 +48,9 @@ function Testimonial() {
                         <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in-up">
                             <img src="https://media.istockphoto.com/id/1572396743/photo/business-man-smile-and-style-portrait-in-studio-for-corporate-or-ceo-fashion-while-happy-face.webp?a=1&b=1&s=612x612&w=0&k=20&c=B_bPe7hoyPrtYD73VnPbMQ24Y5xwvTA4CTc0DqMRADU=" className="card-img-top" alt="..." />
                             <div className="card-body p-4">
-                                <p className="card-text">"Since adopting remote work practices, our team has never been more
-                                    efficient.
-                                    We’ve streamlined our processes, developed meaningful team rituals, and seen a noticeable
-                                    boost in productivity. Distance is no longer a barrier!".</p>
-                                <h5 className="pt-3">🕸️Sangaha Ltd.</h5>
+                                <p className="card-text">A must-have for anyone looking to improve their financial health. The app’s simplicity and powerful features make it easy to stay on top "
+                                </p>
+                                <h5 className="pt-3">— Emily R., Marketing Manager</h5>
                             </div>
                         </div>
                     </div>

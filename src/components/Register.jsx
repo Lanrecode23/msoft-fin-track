@@ -18,7 +18,7 @@ function Register() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         setError("")
-
+ 
         // Create a new user with email and password
         try {
             const userCredentials = await createUserWithEmailAndPassword(Auth, email, password)
@@ -43,7 +43,15 @@ function Register() {
               // Reset the form
               handleReset()
         } catch (error) {
-            setError(error.message);
+            switch (error.code) {
+                case "auth/email-already-in-use":
+                    setError('The Email is already in use. Please try again')
+                    break;
+            
+                default:
+                    setError('An error occurred! Please try again later.');
+                    break;
+            }
         }
     };
 
@@ -71,7 +79,7 @@ function Register() {
         <div>
            <Link to= '/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link> 
             <form className="form" onSubmit={handleSubmit}>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {error && <h6 style={{ color: 'red' }}>{error}</h6>}
                 <p className="title">Register </p>
                 <p className="message">Signup now and get full access to our app. </p>
                 <div className="flex-column">

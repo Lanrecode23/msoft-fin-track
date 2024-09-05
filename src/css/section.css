@@ -1,0 +1,10 @@
+.image_section img{
+    width: 30rem!important; 
+    height: 30rem!important;
+}
+.section_add{
+    display: flex;
+    justify-content: space-evenly!important;
+    flex-direction: row;
+    align-items: center;
+}

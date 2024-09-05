@@ -12,55 +12,55 @@ function Login() {
 
   const navigate = useNavigate()
 
-  const handleSubmit = async (e) =>{
+  const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-    const userCredentials =  await signInWithEmailAndPassword(Auth, email, password)
-    const user = userCredentials.user
+      const userCredentials = await signInWithEmailAndPassword(Auth, email, password)
+      const user = userCredentials.user
 
-    if (!user.emailVerified) {
-      Swal.fire({
-        position: "center",
-        icon: "warning",
-        title: "Email not verified",
-        text: "Please verify your email before logging in",
-        showConfirmButton: true,
-        timer: 1500
-      });
-    }else{
-      setError("") 
-      Swal.fire({
-        title: "Congratulations!",
-        text: "You have successfully Logged in!",
-        icon: "success",
-        timer: 2000,  
-        timerProgressBar: true,
-        didClose: () => {
+      if (!user.emailVerified) {
+        Swal.fire({
+          position: "center",
+          icon: "warning",
+          title: "Email not verified",
+          text: "Please verify your email before logging in",
+          showConfirmButton: true,
+          timer: 1500
+        });
+      } else {
+        setError("")
+        Swal.fire({
+          title: "Congratulations!",
+          text: "You have successfully Logged in!",
+          icon: "success",
+          timer: 2000,
+          timerProgressBar: true,
+          didClose: () => {
             navigate('/login');
-        }
-    });
-    }
-       
+          }
+        });
+      }
+
     } catch (error) {
       // interpret the firebase error
       switch (error.code) {
         case "auth/invalid-credential":
           setError('invalid Credentials! please enter a valid credentials.');
           break;
-      
+
         default:
-          setError('An error occurred! Please try again later.');
+          setError('Please verify your email before you login');
           break;
-      }  
-  
+      }
+
     }
   }
 
   return (
     <>
-      <Link to= '/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link>
+      <Link to='/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link>
       <form className="form" onSubmit={handleSubmit}>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <h6 style={{ color: 'red' }}>{error}</h6>}
         <p className="title">Login </p>
         <p className="message">Signin now to continue with the app. </p>
         <div className="flex-column">
