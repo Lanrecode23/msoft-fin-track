@@ -92,4 +92,24 @@
     letter-spacing: 0.1em;
     transform: scale(1);
   }
-  
+
+  @media screen and (max-width: 576px) {
+    .h3 {
+      height: 34rem!important;
+      padding: 30px;
+    }
+    .h3 h3 {
+      font-size: 30px;
+    }
+    .h3 p{
+      font-size: 16px;
+      color: #fff;
+      text-shadow: 2px  2px 2px rgb(0, 0, 0);
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 1;
+    }
+    .but {
+      padding: 0.5em 0.4em !important;
+    }
+  }

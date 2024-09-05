@@ -11,6 +11,13 @@
     margin-top: 6rem!important;
 }
 
+.iconf i{
+    color: #ffffff;
+}
+.social-icons i{
+    margin-left: 3rem!important;
+    font-size: 1.4rem!important;
+}
 .subscribe-email input{
     border: none !important;
     outline: none !important;
@@ -27,7 +34,7 @@
     cursor: pointer;
 }
 .footer-links ul li{
-    line-height: 2rem!important;
+    line-height: 2.4rem!important;
     cursor: pointer;
 }
 

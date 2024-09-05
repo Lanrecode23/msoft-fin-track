@@ -20,8 +20,9 @@ function Header() {
                             <Nav.Link href="#pr">Section</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to = '/login'>Login</Nav.Link>
+                            <Nav.Link as={Link} to = '/login'><i className="bi bi-box-arrow-in-right" style={{marginRight: "3px"}}></i>Login</Nav.Link>
                             <Nav.Link as={Link} to ='/register'>
+                            <i className="bi bi-r-square" style={{marginRight: "3px"}}></i>
                                 Register
                             </Nav.Link>
                         </Nav>
