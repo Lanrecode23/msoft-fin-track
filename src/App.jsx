@@ -1,8 +1,8 @@
-import Register from './Form/Register'
+import Register from './components/Register'
 import Home from './Home/Home'
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
 import'./App.css'
-import Login from './Form/Login'
+import Login from './components/Login'
 
 function App() {
 
