@@ -11,8 +11,16 @@ function Register() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState(null)
+    const [showPassword, setShowPassword] = useState(true)
 
 
+
+
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+    
     const navigate = useNavigate()
     // Add form submission handler if needed
     const handleSubmit = async (event) => {
@@ -146,10 +154,14 @@ function Register() {
                             d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"
                         ></path>
                     </svg>
-                    <input type="password" className="input" placeholder="Enter your Password"
+                    <input type={showPassword ? "password" : "text"} className="input" placeholder="Enter your Password"
                         value={password} onChange={(e) => setPassword(e.target.value)}
                         required
                     />
+                    <i
+                        className={showPassword ? "bi bi-eye-slash" : "bi bi-eye"}
+                        onClick={togglePasswordVisibility}
+                    ></i>
                 </div>
 
                 <button type="submit" className="button-submit" >Sign Up</button>
