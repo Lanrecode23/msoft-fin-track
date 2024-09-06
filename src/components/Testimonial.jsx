@@ -7,7 +7,7 @@ function Testimonial() {
 
     useEffect(() => {
         AOS.init({
-            duration: 1800,
+            duration: 2000,
             once: true,
             offset: 200,
             delay:100,
@@ -25,7 +25,7 @@ function Testimonial() {
                 </div>
                 <div className="row row-cols-lg-3 p-4" id="testimonial">
                     <div className="col-sm-6 col-md-6 mb-3 mb-sm-0">
-                        <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in-up">
+                        <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="fade-up">
                             <img src="https://media.istockphoto.com/id/1540766473/photo/young-adult-male-design-professional-smiles-for-camera.webp?a=1&b=1&s=612x612&w=0&k=20&c=b5jQWlwUzmp-MBDwPg02HSKsqZy0Ymd6o2NTeXlB5Zo=" className="card-img-top" alt="..." />
                             <div className="card-body p-4">
                                 <p className="card-text">"This app has transformed the way I manage my money! I can track every expense and see where my money is going with just a few clicks."
@@ -35,7 +35,7 @@ function Testimonial() {
                         </div>
                     </div>
                     <div className="col-sm-6 col-md-6">
-                        <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in-up">
+                        <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="fade-up">
                             <img src="https://media.istockphoto.com/id/1626847852/photo/a-happy-beautiful-blonde-businesswoman-working-on-her-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=s5Hpq6hd45U8hrodknk8nf8z2mfMUJoL5vG3tdWwZIQ=" className="card-img-top" alt="..." />
                             <div className="card-body p-4">
                                 <p className="card-text">I feel more in control of my finances than ever before. The budgeting tools and spending insights have helped me save more each month. "
@@ -45,7 +45,7 @@ function Testimonial() {
                         </div>
                     </div>
                     <div className="col-sm-6 col-md-6">
-                        <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in-up">
+                        <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="fade-up">
                             <img src="https://media.istockphoto.com/id/1572396743/photo/business-man-smile-and-style-portrait-in-studio-for-corporate-or-ceo-fashion-while-happy-face.webp?a=1&b=1&s=612x612&w=0&k=20&c=B_bPe7hoyPrtYD73VnPbMQ24Y5xwvTA4CTc0DqMRADU=" className="card-img-top" alt="..." />
                             <div className="card-body p-4">
                                 <p className="card-text">A must-have for anyone looking to improve their financial health. The app’s simplicity and powerful features make it easy to stay on top "

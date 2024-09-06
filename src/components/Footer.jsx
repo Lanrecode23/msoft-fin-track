@@ -16,10 +16,10 @@ function Footer() {
                     <h4>Useful Links</h4>
                     <ul className='list-unstyled text-white iconf'>
                         <li className='nav-item'><i className="bi bi-house"></i> Home</li>
-                        <li className='nav-item'><i class="bi bi-sliders"></i> Features</li>
-                        <li className='nav-item'><i class="bi bi-person-rolodex"></i> Contact</li>
-                        <li className='nav-item'><i class="bi bi-shield-plus"></i> Privacy Policy</li>
-                        <li className='nav-item'><i class="bi bi-terminal-plus"></i> Terms of Service</li>
+                        <li className='nav-item'><i className="bi bi-sliders"></i> Features</li>
+                        <li className='nav-item'><i className="bi bi-person-rolodex"></i> Contact</li>
+                        <li className='nav-item'><i className="bi bi-shield-plus"></i> Privacy Policy</li>
+                        <li className='nav-item'><i className="bi bi-terminal-plus"></i> Terms of Service</li>
                     </ul>
                 </div>
 

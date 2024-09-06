@@ -49,7 +49,7 @@ function Login() {
           break;
 
         default:
-          setError('Please verify your email before you login');
+          setError('An error occurred! Please try again later');
           break;
       }
 

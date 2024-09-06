@@ -100,6 +100,7 @@ function Register() {
                     </svg>
                     <input type="text" className="input" placeholder="Enter your Name"
                         value={displayName} onChange={(e) => setDisplayName(e.target.value)}
+                        required
                     />
                 </div>
                 <div className="flex-column">
@@ -118,8 +119,9 @@ function Register() {
                             ></path>
                         </g>
                     </svg>
-                    <input type="text" className="input" placeholder="Enter your Email"
+                    <input type="email" className="input" placeholder="Enter your Email"
                         value={email} onChange={(e) => setEmail(e.target.value)}
+                        required
                     />
                 </div>
 
@@ -142,11 +144,12 @@ function Register() {
                     </svg>
                     <input type="password" className="input" placeholder="Enter your Password"
                         value={password} onChange={(e) => setPassword(e.target.value)}
+                        required
                     />
                 </div>
 
                 <button type="submit" className="button-submit" >Sign Up</button>
-                <p className="p">Already have an account? <span className="span">login</span></p>
+               <p className="p">Already have an account? <span className="span"><Link to = '/login'>login</Link></span></p>
                 <div className="flex-row">
                     <button className="btn google" onClick={handleGoogle}>
                         <svg

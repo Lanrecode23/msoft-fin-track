@@ -4,8 +4,7 @@ function Section() {
     return (
 
         <div className="container-fluid section_add  p-5 ">
-            <div className="section_head " data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom">
+            <div className="section_head " data-aos="fade-up">
                 <h2>Our Revolutionary Features</h2>
                 <p>Discover the latest and greatest features of our app These tools are designed to enhance <br /> your financial journey and make tracking easier than ever.</p>
             </div>

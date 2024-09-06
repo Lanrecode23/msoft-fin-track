@@ -50,5 +50,18 @@
     }
     .subscribe-email h4{
         margin-top: 2rem!important;
+        font-size: 19px!important;
     }
+    .footer-brand p, .footer-links li{
+        font-size: 15px !important;
+    
+    }
+    .subscribe-email button{
+       margin-top: 0.4rem !important;
+       padding: 10px 40px!important;
+    }
+    .footer-links h4{
+        font-size: 19px!important;
+    }
+    
 }

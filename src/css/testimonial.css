@@ -18,5 +18,11 @@
     .section p{
         font-size: 14px !important;
     }
+    .card-text{
+        font-size: 14px !important;
+    }
+    .card-body h5{
+        font-size: 16px !important;
+    }
    
 }

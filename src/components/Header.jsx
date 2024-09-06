@@ -15,14 +15,14 @@ function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link href="#features">Home</Nav.Link>
-                            <Nav.Link href="#pricing">About</Nav.Link>
-                            <Nav.Link href="#pr">Section</Nav.Link>
+                            <Nav.Link href="#features" className='header_nav'>Home</Nav.Link>
+                            <Nav.Link href="#pricing" className='header_nav'>About</Nav.Link>
+                            <Nav.Link href="#pr" className='header_nav'>Section</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to = '/login'><i className="bi bi-box-arrow-in-right" style={{marginRight: "3px"}}></i>Login</Nav.Link>
-                            <Nav.Link as={Link} to ='/register'>
-                            <i className="bi bi-r-square" style={{marginRight: "3px"}}></i>
+                            <Nav.Link as={Link} to = '/login' className='header_nav'><i className="bi bi-box-arrow-in-right" style={{marginRight: "3px"}}></i>Login</Nav.Link>
+                            <Nav.Link as={Link} to ='/register' className='header_nav' >
+                            <i className="bi bi-r-square " style={{marginRight: "3px"}} ></i>
                                 Register
                             </Nav.Link>
                         </Nav>
