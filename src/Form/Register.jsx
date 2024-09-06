@@ -18,7 +18,7 @@ function Register() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         setError("")
- 
+
         // Create a new user with email and password
         try {
             const userCredentials = await createUserWithEmailAndPassword(Auth, email, password)
@@ -32,22 +32,26 @@ function Register() {
                 title: "Congratulations!",
                 text: `${user.displayName}, you have successfully registered!`,
                 icon: "success",
-                timer: 2000,  
+                timer: 2000,
                 timerProgressBar: true,
                 didClose: () => {
                     navigate('/login');
                 }
             });
-           
-              
-              // Reset the form
-              handleReset()
+
+
+            // Reset the form
+            handleReset()
         } catch (error) {
             switch (error.code) {
                 case "auth/email-already-in-use":
                     setError('The Email is already in use. Please try again')
                     break;
-            
+
+                case "auth/weak-password":
+                    setError('The password is too weak. It must be at least 6 characters long.');
+                    break;
+
                 default:
                     setError('An error occurred! Please try again later.');
                     break;
@@ -66,7 +70,7 @@ function Register() {
             setError(error.message);
         }
     };
-   
+
     const handleReset = () => {
         // Reset the form
         setDisplayName("")
@@ -77,7 +81,7 @@ function Register() {
 
     return (
         <div>
-           <Link to= '/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link> 
+            <Link to='/'><div className="logo"><img src="/img/logo.png" alt="" /></div></Link>
             <form className="form" onSubmit={handleSubmit}>
                 {error && <h6 style={{ color: 'red' }}>{error}</h6>}
                 <p className="title">Register </p>
@@ -149,7 +153,7 @@ function Register() {
                 </div>
 
                 <button type="submit" className="button-submit" >Sign Up</button>
-               <p className="p">Already have an account? <span className="span"><Link to = '/login'>login</Link></span></p>
+                <p className="p">Already have an account? <span className="span"><Link to='/login'>login</Link></span></p>
                 <div className="flex-row">
                     <button className="btn google" onClick={handleGoogle}>
                         <svg
