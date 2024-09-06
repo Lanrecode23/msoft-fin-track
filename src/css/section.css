@@ -8,6 +8,23 @@
     flex-direction: row;
     align-items: center;
 }
+@media screen and (max-width:476px) {
+    .section_add{
+        flex-direction: column-reverse;
+        justify-content: center!important;
+    }
+    .section_head {
+        text-align: center;
+    }
+    .section_head p{
+        font-size: 14.2px;
+    }
+    .image_section img{
+        width: 25rem!important; 
+        height: 25rem!important;
+        text-align: center;
+    }
+}
 @media screen and (max-width:576px) {
     .section_add{
         flex-direction: column-reverse;
