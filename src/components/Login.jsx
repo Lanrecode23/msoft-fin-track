@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Auth } from '../config/firebase';
 import Swal from 'sweetalert2'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { Auth } from '../config/firebase';
 
 function Login() {
 
@@ -36,7 +36,7 @@ function Login() {
           timer: 2000,
           timerProgressBar: true,
           didClose: () => {
-            navigate('/login');
+            navigate('/');
           }
         });
       }

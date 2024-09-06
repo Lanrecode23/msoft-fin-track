@@ -15,8 +15,6 @@ function Register() {
 
 
 
-
-
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
