@@ -40,7 +40,7 @@ function Register() {
                 timer: 2000,
                 timerProgressBar: true,
                 didClose: () => {
-                    navigate('/login');
+                    navigate('/transaction');
                 }
             });
 
