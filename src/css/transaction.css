@@ -1,0 +1,24 @@
+.Transaction_list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem !important;
+}
+.Add_Transaction .Form_transaction{
+    background-color: #14a94d !important;
+    border-radius: 10px !important;
+    padding: 2rem 1.9rem !important;
+    margin-top: 1rem !important;
+    outline: none !important;
+    border: none !important;
+}
+.Add_Transaction .Form_transaction button{
+    background-color: hsl(143, 90%, 33%);
+    border-radius: 10px !important;
+    border: 1px solid #fff;
+    color: #fff;
+    padding:0.5rem 2.4rem;
+}
+ .Add_Transaction h5{
+    color: #14a94d;
+    font-weight: 600;
+}

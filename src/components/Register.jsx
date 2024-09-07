@@ -14,7 +14,6 @@ function Register() {
     const [showPassword, setShowPassword] = useState(true)
 
 
-
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
@@ -157,7 +156,7 @@ function Register() {
                         required
                     />
                     <i
-                        className={showPassword ? "bi bi-eye-slash" : "bi bi-eye"}
+                        className={showPassword ? "bi bi-eye" : "bi bi-eye-slash"}
                         onClick={togglePasswordVisibility}
                     ></i>
                 </div>

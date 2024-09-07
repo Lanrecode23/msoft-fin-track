@@ -11,7 +11,6 @@ function Footer() {
                             achieve your financial goals effortlessly. <br />
                             Start managing your money smarter today.</p>
                 </div>
-
                 <div className="footer-links text-white">
                     <h4>Useful Links</h4>
                     <ul className='list-unstyled text-white iconf'>
@@ -22,7 +21,6 @@ function Footer() {
                         <li className='nav-item'><i className="bi bi-terminal-plus"></i> Terms of Service</li>
                     </ul>
                 </div>
-
                 <div className="subscribe-email">
                     <h4>Subscribe to our newsletter</h4>
                     <input type="text" placeholder="Enter your email" />
@@ -33,10 +31,10 @@ function Footer() {
                 {/* <h4>Follow Us</h4> */}
                 <div className="social-icons text-center mt-5">
                     <a href="https://wa.me/2347052789006" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-whatsapp"></i>
+                        <i className="bi bi-whatsapp"></i>
                     </a>
                     <a href="https://www.instagram.com/dahunsi_matthew/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/oluwadahunsimatthew/" target="_blank" rel="noopener noreferrer">
                         <i className="bi bi-linkedin"></i>

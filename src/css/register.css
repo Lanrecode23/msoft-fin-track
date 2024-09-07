@@ -41,6 +41,10 @@ body {
     transition: 0.2s ease-in-out;
   }
   
+  .inputForm i{
+    cursor: pointer;
+  }
+  
   .input {
     margin-left: 10px;
     border-radius: 10px;
