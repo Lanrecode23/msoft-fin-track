@@ -42,7 +42,7 @@ function Login() {
           timer: 2000,
           timerProgressBar: true,
           didClose: () => {
-            navigate('/');
+            navigate('/transaction');
           }
         });
       }
