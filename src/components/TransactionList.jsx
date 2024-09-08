@@ -16,7 +16,8 @@ function TransactionList() {
             }
         ]
         console.log(details);
-        
+        setTransactionName("")
+        setAmount("")
     }
     
     return (
