@@ -66,11 +66,12 @@ function Register() {
 
 
     // Add Google Sign-In button handler
-    const handleGoogle = async () => {
+    const handleGoogle = async (e) => {
+        e.preventDefault()
         setError("")
         try {
             await signInWithPopup(Auth, googleProvider)
-            navigate('/login');
+            navigate('/transaction');
         } catch (error) {
             setError(error.message);
         }
