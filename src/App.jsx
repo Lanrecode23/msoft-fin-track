@@ -6,6 +6,7 @@ import Login from './components/Login'
 import NotFound from './components/NotFound'
 import TransactionList from './components/TransactionList'
 import UserProvider from './contexts/UserProvider'
+import SideNav from './components/SideNav'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/transaction" element={<TransactionList />} />
+            <Route path="/sidebar" element={<SideNav />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

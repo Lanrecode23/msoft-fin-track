@@ -2,22 +2,25 @@ import React, { useState } from 'react'
 import '../css/transaction.css'
 import Header from './Header'
 import TransactionEvent from './TransactionEvent'
+import useAddTransaction from '../hooks/useAddTransaction'
 
 function TransactionList() {
     const [transactionName, setTransactionName] = useState("")
     const [amount, setAmount] = useState("")
+    const [transactionType, setTransactionType] = useState("")
 
+    // get the custom add transaction hook
+    const {addTransaction} = useAddTransaction()
+
+ // handle form submission for adding a new transaction
     const handleSubmit = (e)=>{
         e.preventDefault();
-        const details = [
-            {
-                transact_name : transactionName,
-                Amount: amount,
-            }
-        ]
-        console.log(details);
-        setTransactionName("")
-        setAmount("")
+        addTransaction({
+            description: transactionName,
+            amount: Number(amount) ,
+            type: transactionType
+        })
+        
     }
     
     return (
@@ -37,6 +40,14 @@ function TransactionList() {
                         <label htmlFor="">Amount ($):</label><br />
                         <input type="number" name="" id="" 
                         value={amount} onChange={(e)=>setAmount(e.target.value)} required/> <br /><br />
+                        <label htmlFor="expenses">
+                            <input type="radio" name="trasactionType" id=""  value='expenses'
+                            onChange={(e)=>setTransactionType(e.target.value)}/> Expenses &nbsp;  &nbsp; &nbsp; 
+                        </label>
+                        <label htmlFor="income">
+                            <input type="radio" name="trasactionType" id="" value='income' 
+                            onChange={(e)=>setTransactionType(e.target.value)}/> Income
+                        </label> <br /> <br />
                         <button>Add Transaction</button>
                     </form>
                 </div>
