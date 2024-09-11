@@ -3,6 +3,7 @@ import '../css/transaction.css'
 import Header from './Header'
 import TransactionEvent from './TransactionEvent'
 import useAddTransaction from '../hooks/useAddTransaction'
+import DisplayTransaction from './DisplayTransaction'
 
 function TransactionList() {
     const [transactionName, setTransactionName] = useState("")
@@ -52,6 +53,8 @@ function TransactionList() {
                     </form>
                 </div>
             </div>
+
+            <DisplayTransaction/>
         </>
     )
 }

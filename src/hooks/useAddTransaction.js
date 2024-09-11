@@ -1,6 +1,6 @@
 import React from 'react'
 import { Auth, db } from '../config/firebase'
-import { addDoc, collection } from 'firebase/firestore'
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
 function useAddTransaction() {
 
@@ -15,7 +15,7 @@ function useAddTransaction() {
             description,
             amount,
             type,
-            createdAt: new Date(),
+            createdAt: serverTimestamp,
         });
 
     }
