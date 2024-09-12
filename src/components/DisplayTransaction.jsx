@@ -1,5 +1,6 @@
 import React from 'react'
 import useGetTransaction from '../hooks/useGetTransaction'
+import '../css/transaction.css'
 
 function DisplayTransaction() {
     const { transactions, loading, error } = useGetTransaction()
@@ -16,15 +17,17 @@ function DisplayTransaction() {
                         </div>
                     </div>
                 )}
+                
                 {error && <h5 className='text-center' style={{color:"red", marginTop:'6rem'}}>Error: {error}</h5>}
-                <ul>
+                {transactions.length == 0 && <h5 className='text-center mt-5'>No transactions Yet</h5>}
+                <div className='transact_container text-center mt-5'>
                     {!loading && transactions.map(transaction => (
-                        <li key={transaction.id}>
+                        <div key={transaction.id}>
                             <div>{transaction.description}</div>
-                            <div>{transaction.amount} - {transaction.type}</div>
-                        </li>
+                            <div className='mb-3'>{transaction.amount} - {transaction.type}</div>
+                        </div>     
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     )

@@ -22,3 +22,11 @@
     color: #14a94d;
     font-weight: 600;
 }
+.transact_container{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px  4px #202020;
+    width: 50%;
+    height: fit-content !important;
+    margin: auto;
+    padding: 2rem;
+}

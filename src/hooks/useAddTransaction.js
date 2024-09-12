@@ -15,7 +15,7 @@ function useAddTransaction() {
             description,
             amount,
             type,
-            createdAt: serverTimestamp,
+            createdAt: serverTimestamp()
         });
 
     }
