@@ -23,8 +23,8 @@ function DisplayTransaction() {
                 <div className='transact_container text-center mt-5'>
                     {!loading && transactions.map(transaction => (
                         <div key={transaction.id}>
-                            <div>{transaction.description}</div>
-                            <div className='mb-3'>{transaction.amount} - {transaction.type}</div>
+                            <h5>{transaction.description}</h5>
+                            <div style={{marginBottom:'10px'}} className={transaction.type === 'expenses'? 'red' : 'green'}>Amount ( $ {transaction.amount}) - type ({transaction.type})</div>
                         </div>     
                     ))}
                 </div>

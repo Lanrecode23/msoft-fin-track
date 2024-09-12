@@ -1,6 +1,7 @@
 .Transaction_list{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     margin-top: 6rem !important;
 }
 .Add_Transaction .Form_transaction{
@@ -10,6 +11,12 @@
     margin-top: 1rem !important;
     outline: none !important;
     border: none !important;
+}
+.red{
+    color: red !important;
+}
+.green{
+    color: #14a94d;
 }
 .Add_Transaction .Form_transaction button{
     background-color: hsl(143, 90%, 33%);
@@ -29,4 +36,17 @@
     height: fit-content !important;
     margin: auto;
     padding: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .Transaction_list{
+        flex-direction: column-reverse;
+        margin-top: 4rem !important;
+        padding: 2rem !important;
+    }
+    .Add_Transaction .Form_transaction{
+        margin-bottom: 1.5rem !important;
+        outline: none !important;
+        border: none !important;
+    }
 }
