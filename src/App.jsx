@@ -6,7 +6,6 @@ import Login from './components/Login'
 import NotFound from './components/NotFound'
 import TransactionList from './components/TransactionList'
 import UserProvider from './contexts/UserProvider'
-import SideNav from './components/SideNav'
 
 function App() {
 
