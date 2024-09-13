@@ -19,7 +19,6 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/transaction" element={<TransactionList />} />
-            <Route path="/sidebar" element={<SideNav />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
