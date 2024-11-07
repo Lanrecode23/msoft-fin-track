@@ -27,7 +27,7 @@ function useGetTransaction() {
                     const userId = user.uid;
                     const collectionRef = collection(db, 'transactions');
                     const q = query(collectionRef, where('userId', '==', userId));
-
+                //Got through the collection and return the items in that collection
                     const unsubscribe = onSnapshot(q, (snapshot) => {
                         const transactionsList = snapshot.docs.map(doc => {
                             const data = doc.data();
