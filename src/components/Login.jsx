@@ -112,6 +112,7 @@ function Login() {
           <i className={showPassword ? "bi bi-eye" : "bi bi-eye-slash"} onClick={toggleVisibility}></i>
         </div>
         <button type="submit" className="button-submit" >Sign in</button>
+        <p className="p">Don't have an account? <span className="span"><Link to='/register'>signup</Link></span></p>
       </form>
     </>
   )

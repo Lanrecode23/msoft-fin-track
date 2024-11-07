@@ -23,7 +23,7 @@ function Testimonial() {
                     <h1 className="text-center mt-5">Testimonials</h1>
                     <p className="text-center">What our satisfied customers are saying about our finance tracker app.</p>
                 </div>
-                <div className="row row-cols-lg-3 p-4" id="testimonial">
+                <div className="row row-cols-lg-3 mt-5" id="testimonial">
                     <div className="col-sm-6 col-md-6 mb-3 mb-sm-0">
                         <div className="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="fade-up">
                             <img src="https://media.istockphoto.com/id/1540766473/photo/young-adult-male-design-professional-smiles-for-camera.webp?a=1&b=1&s=612x612&w=0&k=20&c=b5jQWlwUzmp-MBDwPg02HSKsqZy0Ymd6o2NTeXlB5Zo=" className="card-img-top" alt="..." />

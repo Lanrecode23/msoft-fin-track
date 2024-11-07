@@ -18,7 +18,7 @@ function useAddTransaction() {
                 description,
                 amount,
                 type,
-                createdAt: serverTimestamp()
+                // createdAt: serverTimestamp()
             })
             const Toast = Swal.mixin({
                 toast: true,
